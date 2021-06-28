@@ -4,8 +4,6 @@ UGUI(Unity Graphic User Interface) 를 구성하는 기능 및 컴포넌트에 �
 
 Environment : Unity 2020.3.12f
 
-Platform : Windows
-
 References
 
 [Unity Documentation](https://docs.unity3d.com/kr/2020.3/Manual/com.unity.ugui.html)
