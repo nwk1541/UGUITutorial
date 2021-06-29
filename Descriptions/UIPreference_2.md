@@ -1,5 +1,5 @@
 
-# UI 환경설정 (Camera, Canvas)
+# UI 환경설정 (Camera, Canvas) 
 
 유니티 엔진에서 UI를 제작하려면 어떻게 해야하는지 주요 컴포넌트의 설정에 대해 알아보자.
 
