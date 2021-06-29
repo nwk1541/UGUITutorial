@@ -1,5 +1,5 @@
 
-# UI 환경설정 (Camera, Canvas)
+# UI 환경설정 (Camera, Canvas) -
 
 유니티 프로그램에서 UI를 제작하려면 어떻게 해야하는지 환경설정을 알아보자.
 
