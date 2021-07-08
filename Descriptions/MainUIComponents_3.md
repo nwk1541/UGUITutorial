@@ -14,26 +14,49 @@ UI를 제작할때 가장 많이 사용되는 툴이다. Rect Tool은 2D 기능�
 
 RectTransform 기능은 UI 요소의 위치, 회전, 크기 조절을 할 수 있고 너비와 높이 조정도 가능하다.
 
-![](./images/UI_RectTransform.png)
+![](./Images/UI_RectTransform.png)
 
 * Pos는 아래 설명의 Anchor와 Pivot의 기준으로 설정된 실제 좌표이다. 이를 사용하여 UI 요소의 크기를 변경할 수 있다.
 * Anchors는 UI 요소의 원점 위치를 정할 수 있다. 아래 이미지의 앵커 좌표를 원점으로 하여 UI 요소 위치 기준값을 결정할 수 있다. 
-![](./images/Unity_Anchor_image.jpg)
+![](./Images/Unity_Anchor_image.jpg)
 * UI 요소의 원점을 두고 싶을 경우엔 캔버스의 왼쪽 하단(0,0) 오른쪽 상단(1,1)일 때 Anchor의 값을 (0.5, 0.5)로 지정하면 된다.
+
+![](./Images/Unity_Anchor_image_3.jpg)
 
 * 왼쪽 상단 모서리에 있는 Anchor Preset 버튼에 대해서 알아보자면, 이는 UI 요소를 부모 영역의 측면이나 중간에 고정을 시켜 부모 크기와 함께 늘릴 수 있다. 여기에서 수평 및 수직은 독립적이다.
 * 부모 영역 안에 있는 자식 영역을 정확한 위치에 고정시키고 싶다면 Ctrl + alt + 앵커 좌 클릭을 하면 된다. 자식 영역을 옆으로 늘리고 싶을때는 stretch를 클릭하면 된다.
-![](./images/Unity_Anchor_image_3.jpg)
 
 * Pivot는 UI 요소 내부의 기준점을 정할 수 있다.
 ## Image
-![](./images/UI_ImageInspector.jpg)
+![](./Images/UI_ImageInspector.jpg)
 
-* 
+* 이미지에는 Rect Transform 구성 요소와 Image 구성 요소가 있다. 유니티에서 이미지를 스프라이트라고 불리우는데, 스프라이트는 대상 그래픽 필드 하단의 이미지 구성 요소에 적용할 수 있다. 색상, 재질을 이미지에 적용 가능하다.
+
+![](./Images/Image_Type_field.jpg)
+
+* Image Type field란 스프라이트가 어떻게 표현될지의 방식을 말한다.
+* Sumple은 전체 스프라이트를 같은 크기로 조정할 수 있다.
+* Sliced은 3x3 분할의 방식을 활용하여 크기를 조정하여도 모서리 부분이 변형되지 않고 중앙 부분만 늘어난다. UI 요소 중 버튼을 만들때 많이 사용된다.
+* Tiled은 위의 방식과 비슷한 방식이지만 이미지 중앙이 늘어나는 것이 아닌 반복된다. 테두리가 없는 스프라이트는 전체 이미지가 반복이 되는 걸 볼 수 있다.
+* Filled - 정해진 방향과 방법, 양으로 원점에서 스프라이트를 채운다는 방식을 빼면 Simple과 같은 방식이라고 볼 수 있다.
+
+* 스프라이트 편집기를 통해 이미지를 9 슬라이딩 하는 옵션에 대해서도 알아보자면, 이는 이미지를 9개 영역으로 나누어 스프라이트 크기가 변화되어도 모서리 부분이 늘어나지 않는다.
+
+![](./Images/UI_SpriteEditor.png)
 ## Text
+![](./Images/Unity_Text_Image.png)
+* 텍스트를 표시하기 위해서는 텍스트 영역을 먼저 설정해야한다.
+* 텍스트의 폰트, 폰트 스타일, 폰트의 크기 등을 설정할 수 있다.
+* Paragraph의 Horizontal Overflow, Vertical Overflow에서 Wrap을 설정하면 지정한 영역 내에서 텍스트가 작성된다. Overflow로 설정했을 경우엔 지정한 영역 밖으로 텍스트가 벗어난다.
+
+![](./Images/Unity_Text_Image_2.png)
+
+* Best Fit을 설정하면 텍스트가 영역의 너비 또는 높이보다 사이즈가 클 때 제어를 할 수 있다. 사용 가능한 공간에 맞춰 텍스트 크기를 조정할 수 있다. Min Size와 Max Size는 Font Size와 동일하게 지정하는 것이 좋다.
 
 ## Button
+* 버튼은 사용자가 이를 클릭했을때 응답하고 시작, 작업을 확인할 때 사용됩니다.
+* 게임 플레이 시작, 저장, 취소 등의 작업을 수행할 수 있도록 만들어 주는 기능입니다.
 
 # 피드백
 
-Pivot에 대한 개념이 이해가 안 됩니다. image 설명부터는 내일 다 끝내겠습니다..!
+Pivot에 대한 개념이 이해가 안 됩니다. 추가적으로 설명이 필요한 부분이 있는지 확인 부탁드립니다!
