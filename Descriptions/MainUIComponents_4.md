@@ -13,7 +13,7 @@ UI 요소를 배치하기 위해서 주요 UI 컴포넌트에 대해서 알아�
 
 * GameObject - UI - Scroll View 이 순서를 따르면 유니티의 사전 설정 된 스크롤뷰를 만들 수 있다.
 
-![](./Images/Scroll_Rect_1.png)
+![](./Images/Scroll_Rect_1.PNG)
 
 * Scroll View는 ScrollRect - Viewport - Contents의 순서로 구성된다.
 
