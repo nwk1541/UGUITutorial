@@ -19,12 +19,12 @@ UI 요소를 배치하기 위해서 주요 UI 컴포넌트에 대해서 알아�
 
 ### 속성
 
-![](./Images/Scroll_Rect_2.png)
+![](./Images/Scroll_Rect_2.PNG)
 
 * Content는 스크롤하는 내용이 있는 오브젝트이다.
 * Horizontal과 Vertical는 스크롤의 방향을 설정할 수 있다. 
 
-![](./Images/Scroll_Rect_3.png)
+![](./Images/Scroll_Rect_3.PNG)
 
 * Viewport는 Content가 보여지는 영역이다. 해당 영역을 구성하기 위해 Mask와 Image가 있어야 한다.
 
@@ -34,13 +34,13 @@ UI 요소를 배치하기 위해서 주요 UI 컴포넌트에 대해서 알아�
 ### Content Size Fitter
 UI 요소의 크기를 자동으로 조절해준다. 방법으로는 3가지가 있고 Unconstrained(제약 없음), Min Size(최소 크기), Preferred Size(적절한 크기)가 있다.
 
-![](./Images/Scroll_Rect_4.png)
+![](./Images/Scroll_Rect_4.PNG)
 
 ### Horizontal/Vertical Group
 
 하위 UI 요소들을 가로/세로 방향으로 일정하게 배치된다.
 
-![](./Images/Layout_group_1.png)
+![](./Images/Layout_group_1.PNG)
 
 * Padding은 하위 UI 요소들의 여백을 설정한다.
 * Spacing은 UI 요소들의 간격을 설정한다.
