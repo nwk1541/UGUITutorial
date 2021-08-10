@@ -30,3 +30,51 @@
 | ![](./Images/UIPractice_3.PNG) |
 |:--:|
 | 상점 2 *http://garmuri.com/game_ui/115277* |
+
+
+
+# 실습 과정
+
+## 세로 방향 스크롤 형식의 상점창
+![](./Images/Unity_Test_2_1.PNG)
+
+* 위와 같이 세로 방향으로 스크롤이 가능한 상점창을 어떻게 제작하는지 알아보자.
+
+![](./Images/Unity_Test_2_2.PNG)
+![](./Images/Unity_Test_2_3.PNG)
+
+* 캔버스를 생성한 뒤 가장 큰 부분인 배경 이미지를 만들어준다. UI 오브젝트 중 Image 오브젝트를 생성한 뒤 이미지를 추가한다.
+* 상단, 중앙, 하단 등 UI 리소스가 들어갈 위치에 앵커를 미리 잡아놓으면 편하게 제작이 가능하다. 빈 오브젝트를 생성 후 상단(To) 중앙(Center)으로 이름을 변경 후 위치에 맞게 앵커를 잡아준다.
+* 위치에 맞게 해당 오브젝트들을 하위에 생성해준다. 상단(Top)에 먼저 배경 오브젝트를 만든다. 그리고 Title과 뒤로가기 버튼 이미지를 만들기 전 빈 오브젝트 생성 후 그 안에 하위 오브젝트로 구성하여 하나로 묶어주는것이 오브젝트 관리하기에 편리하다.
+
+![](./Images/Unity_Test_2_4.PNG)
+
+* 중앙 왼쪽에 위치한 카테고리를 만들기 위해서는 미리 잡아놓은 Center 오브젝트 안에 하위 오브젝트로 CategoryObject를 생성해준다. 이때 오브젝트 이름은 본인이 쉽게 알 수 있는 것으로 만들어준다.
+* 배경을 생성해준 후 상점 카테고리가 5개로 구성되어 있기때문에 하나로 묶어주기 위해서 CategoryGroup 오브젝트를 생성한 후 하위에 5개의 카테고리를 만들어준다. 5개의 카테고리를 일정한 간격으로 정렬시키기 위해 CategoryGroup 오브젝트 안에 Add Component - Vertical Layout Group의 순으로 그룹을 만들 수 있는 Component를 추가해준다. 각 오브젝트의 간격을 조정하려면 Spacing으로 조절하면 된다.
+
+![](./Images/Unity_Test_2_5.PNG)
+![](./Images/Unity_Test_2_6.PNG)
+
+* 스크롤 가능한 아이템 창을 만들기 위해서는 ScrollRect - Viewport - Contents 순으로 빈 오브젝트들을 구성해준다. ScrollRect 오브젝트 안에 Scroll Rect 컴포넌트를 추가해준 후 Viewport와 Content 오브젝트를 Scroll Rect 위치에 맞게 드래그하여 추가해준다.
+* Contents 오브젝트 하위에 ItemObject를 생성하여 상점 아이템 오브젝트를 만들어준다. 
+* 상점 아이템 오브젝트안에 배경 - 아이템 이미지 - 아이템명 - 아이템 가격 순으로 오브젝트를 구성하여 만들어준다.
+* 보여주고자 하는 아이템 갯수만큼 ItemObject를 생성한다. 아이템 오브젝트들을 그룹으로 묶어 정렬하기 위해 Contents 오브젝트 안에 Grild Layout Group 컴포넌트를 추가하여 간격을 조정해준다. 그리고 Content Size Fiter 컴포넌트도 추가하여 Content 크기를 알맞게 맞춰준다. Vertical Fit - Preferred Size를 체크하여 준다.
+* Viewport에 Mask 컴포넌트를 추가하여 게임창에서 어디까지 보여질지를 설정한다. 이때 Image 컴포넌트도 꼭 추가해준다.
+
+
+
+## 가로 방향 스크롤 형식의 상점창
+
+![](./Images/Unity_Test_3_1.PNG)
+
+* 세로 방향으로 스크롤이 가능한 상점창을 어떻게 제작하는지 알아보자.
+
+-> 다음시간에 이어서 설명 추가로 작성하겠습니다.
+
+![](./Images/Unity_Test_3_2.PNG)
+
+![](./Images/Unity_Test_3_3.PNG)
+
+![](./Images/Unity_Test_3_4.PNG)
+
+![](./Images/Unity_Test_3_5.PNG)
