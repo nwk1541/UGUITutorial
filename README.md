@@ -17,7 +17,7 @@ References
 3. [주요 UI 컴포넌트 (RectTransform, Image, Text, Button)](./Descriptions/MainUIComponents_3.md)
 4. [주요 UI 컴포넌트 2 (CanvasGroup, ScrollRect, LayoutGroup)](./Descriptions/MainUIComponents_4.md)
 5. [UI 실전 실습 1](./Descriptions/UIPractice_5.md)
-6. UI 실전 실습 2
+6. [UI 실전 실습 2](./Descriptions/UIPractice_6.md)
 
 ## Etcs
 
