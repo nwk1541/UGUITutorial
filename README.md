@@ -22,5 +22,3 @@ References
 ## Etcs
 
 1. [SourceTree 간단 사용법](./Descriptions/SourceTree_1.md)
-
-커밋 테스트
