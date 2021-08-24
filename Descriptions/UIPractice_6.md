@@ -69,12 +69,29 @@
 
 * 세로 방향으로 스크롤이 가능한 상점창을 어떻게 제작하는지 알아보자.
 
--> 다음시간에 이어서 설명 추가로 작성하겠습니다.
-
 ![](./Images/Unity_Test_3_2.PNG)
 
 ![](./Images/Unity_Test_3_3.PNG)
 
+* 캔버스를 생성 후 각 위치에 맞는 빈 오브젝트를 만들어 준다. 가장 먼저 배경 오브젝트(Background)를 만든다. Top 위치에 배경 이미지를 넣어준 후 상점 텍스트와 뒤로가기 아이콘 오브젝트를 순서대로 만들어 준다.
+
+* Center 위치에 카테고리 오브젝트와 아이템 목록 오브젝트를 위치에 맞게 생성해준다. 카테고리 오브젝트 하단에 배경을 먼저 만들어 준다. 카테고리를 나중에 그룹으로 묶어서 정렬을 하면 일정 간격으로 정리가 되기때문에 카테고리 그룹을 지정할 오브젝트를 생성한다.
+
 ![](./Images/Unity_Test_3_4.PNG)
 
+* 카테고리 그룹 하단에 상점 카테고리를 만들어 준다. 배경과 텍스트 오브젝트를 순서대로 만들어 준 후 Ctrl+D(복사하기) 단축키를 통해 그룹 4개를 생성한다. 복사한 후 안에 내용은 카테고리에 맞게 수정해준다.
+
+* 카테고리 그룹 오브젝트 안에 Add Component - Horizontal Layout Group의 순으로 그룹을 만들 수 있는 Component를 추가해준다. Spacing으로 간격을 조정해준다.
+
 ![](./Images/Unity_Test_3_5.PNG)
+
+
+* 아이템 오브젝트 하위에 ScrollRect - Viewport - Content 순으로 오브젝트를 생성한다.
+
+* ScrollRect 오브젝트 안에 Scroll Rect 컴포넌트를 추가해준다. Content와 Viewport 항목에 맞게 오브젝트를 드래그하여 넣어준다.
+
+* Content 오브젝트 하위에 아이템 목록에 들어갈 오브젝트를 생성한다. 순서대로 Background(배경) - ItemNameObject(아이템명) - ItemImage(아이템) - ItemPriceObject(아이템 가격)을 만들어 준다. 아이템 오브젝트를 다 만든 후에는 목록에 들어갈 갯수에 맞게 Ctrl + D(복사) 단축키를 활용하여 오보젝트를 생성한다.
+
+* Content 오브젝트에 Horizontal Layout Group 컴포넌트를 추가하여 가로방향으로 아이템 오브젝트를 정렬시킨다. Spacing을 조정하여 간격을 맞춰준다. Content Size Fitter 컴포넌트도 추가하여 UI 요소의 크기를 조정해준다. Preferred Size(적절한 크기) 항목을 선택해준다.
+
+* Viewport 오브젝트 안에 Mask 컴포넌트를 추가하여 Content의 보여지는 영역을 설정할 수 있다. 이 때 Image 컴포넌트도 추가해줘야한다. 
