@@ -94,4 +94,4 @@
 
 * Content 오브젝트에 Horizontal Layout Group 컴포넌트를 추가하여 가로방향으로 아이템 오브젝트를 정렬시킨다. Spacing을 조정하여 간격을 맞춰준다. Content Size Fitter 컴포넌트도 추가하여 UI 요소의 크기를 조정해준다. Preferred Size(적절한 크기) 항목을 선택해준다.
 
-* Viewport 오브젝트 안에 Mask 컴포넌트를 추가하여 Content의 보여지는 영역을 설정할 수 있다. 이 때 Image 컴포넌트도 추가해줘야한다. 
+* Viewport 오브젝트 안에 Mask 컴포넌트를 추가하여 Content의 보여지는 영역을 설정할 수 있다. 이 때 Image 컴포넌트도 추가해줘야한다. ---
