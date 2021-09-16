@@ -69,21 +69,21 @@
 
 * 세로 방향으로 스크롤이 가능한 상점창을 어떻게 제작하는지 알아보자.
 
-![](./Images/Unity_Test_3_2.PNG)
+![](./Images/Unity_Test_3_2.png)
 
-![](./Images/Unity_Test_3_3.PNG)
+![](./Images/Unity_Test_3_3.png)
 
 * 캔버스를 생성 후 각 위치에 맞는 빈 오브젝트를 만들어 준다. 가장 먼저 배경 오브젝트(Background)를 만든다. Top 위치에 배경 이미지를 넣어준 후 상점 텍스트와 뒤로가기 아이콘 오브젝트를 순서대로 만들어 준다.
 
 * Center 위치에 카테고리 오브젝트와 아이템 목록 오브젝트를 위치에 맞게 생성해준다. 카테고리 오브젝트 하단에 배경을 먼저 만들어 준다. 카테고리를 나중에 그룹으로 묶어서 정렬을 하면 일정 간격으로 정리가 되기때문에 카테고리 그룹을 지정할 오브젝트를 생성한다.
 
-![](./Images/Unity_Test_3_4.PNG)
+![](./Images/Unity_Test_3_4.png)
 
 * 카테고리 그룹 하단에 상점 카테고리를 만들어 준다. 배경과 텍스트 오브젝트를 순서대로 만들어 준 후 Ctrl+D(복사하기) 단축키를 통해 그룹 4개를 생성한다. 복사한 후 안에 내용은 카테고리에 맞게 수정해준다.
 
 * 카테고리 그룹 오브젝트 안에 Add Component - Horizontal Layout Group의 순으로 그룹을 만들 수 있는 Component를 추가해준다. Spacing으로 간격을 조정해준다.
 
-![](./Images/Unity_Test_3_5.PNG)
+![](./Images/Unity_Test_3_5.png)
 
 
 * 아이템 오브젝트 하위에 ScrollRect - Viewport - Content 순으로 오브젝트를 생성한다.
